@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    list-style-type: none;
+}
+:root{
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+}
+
+body{
+    background: linear-gradient(180deg, var(--Soft-violet) 0%, var(--Soft-blue) 100%) no-repeat fixed center;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+    font-size: 0.813rem !important;
+    font-weight: 700 !important;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.main-content{
+    width:20.438rem;
+    height: 33.438rem;
+    background-color: white;
+    border-radius: 23px;   
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+}
+.top-bg-desktop, .bottom-bg-desktop{
+    display: none;
+}
+.top-bg-mobile{
+    position: absolute;
+    transform: translate(-50%,-55%);
+    left: 50%;
+    right: 50%;
+    max-width: 35%;
+}
+h1{
+    font-size: 2rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+button {
+    all:unset;
+    width: 100%;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    cursor: pointer;
+}
+.bottom-bg-mobile{
+    transform: translate(15%,5%);
+    width: 77%;
+}
